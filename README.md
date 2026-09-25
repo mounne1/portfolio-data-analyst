@@ -5,7 +5,7 @@
 
 **Recherche un stage de data analyst / business analyst — 4 à 6 mois, disponible dès janvier 2027.**
 
-**Outil utilisé dans ce projet :** Power BI Desktop — modélisation relationnelle, mesures DAX, colonnes calculées, tableau de bord interactif
+**Outil utilisé :** Power BI Desktop — modélisation relationnelle, mesures DAX, colonnes calculées, tableaux de bord interactifs
 
 ---
 
@@ -77,6 +77,53 @@ en euros du tableau de bord plutôt que de publier des chiffres non fiables.
   mais n'est pas implémenté. C'est la suite du projet.
 
 📄 [Rapport complet (PDF)](Rapport%20Churn%20Mouniratou_OUEDRAOGO.pdf)
+
+---
+
+## Club Med — Performances commerciales des villages et des marchés
+
+### La question
+
+Quels villages et quels marchés nationaux génèrent le plus de valeur,
+et qu'est-ce qui explique les écarts entre pays ?
+
+### Les données
+
+Réservations Club Med de 2023 à 2025 : clients, villages, durées de séjour,
+nombre de personnes, prix.
+
+### La démarche
+
+- Modèle Power BI à cinq tables : Clients, Village, Réservations,
+  CA annuel village, CA total annuel resorts
+- Mesures DAX : chiffre d'affaires, panier moyen client, total des réservations
+- Rapport en trois pages : vue séjours, vue client par marché, synthèse
+
+### Les résultats
+
+La Suisse génère la meilleure rentabilité du portefeuille. À volume de
+réservations quasi identique à l'Allemagne, elle rapporte nettement plus,
+et l'écart s'explique par la durée des séjours, sensiblement plus longue.
+
+La Belgique affiche à l'inverse la plus faible rentabilité et les séjours
+les plus courts, malgré un volume supérieur au Canada.
+
+**Recommandation :** revoir l'offre sur le marché belge. Le volume est là,
+la valeur par réservation ne suit pas.
+
+### Ce que j'ai appris
+
+À ne pas m'arrêter au premier chiffre. Deux pays avec le même nombre de
+réservations peuvent avoir des rentabilités très différentes : c'est en
+cherchant la variable qui explique l'écart — ici la durée de séjour — que
+l'analyse devient utile à la décision.
+
+### Limites
+
+- L'année 2025 étant incomplète, sa comparaison avec 2023 et 2024 porte sur
+  des périodes de longueur différente.
+- L'hypothèse d'un pouvoir d'achat plus élevé côté suisse reste à vérifier :
+  les données disponibles ne permettent pas de l'établir.
 
 ---
 
